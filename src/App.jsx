@@ -3,6 +3,7 @@
 import CounterWithClass from './components/CounterWithClassComponent'
 import CounterWithFuncComponent from './components/CounterWithFuncComponent'
 import UserInfoUse from './components/UserInfoUse'
+import UserInfoUseReducer from './components/UserInfoUseReducer'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <CounterWithFuncComponent  count={count} setCount={setCount}/>
       </div> */}
 
-      <UserInfoUse/>
+      {/* <UserInfoUse/> */}
+      <UserInfoUseReducer/>
     </>
   )
 }
