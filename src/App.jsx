@@ -2,8 +2,11 @@
 // import { useState } from 'react'
 import CounterWithClass from './components/CounterWithClassComponent'
 import CounterWithFuncComponent from './components/CounterWithFuncComponent'
+import TodoForm from './components/Todo/TodoForm'
+import TodoList from './components/Todo/TodoList'
 import UserInfoUse from './components/UserInfoUse'
 import UserInfoUseReducer from './components/UserInfoUseReducer'
+import TodoProvider from './Context/TodoProvider'
 
 function App() {
 
@@ -17,7 +20,12 @@ function App() {
       </div> */}
 
       {/* <UserInfoUse/> */}
-      <UserInfoUseReducer/>
+      {/* <UserInfoUseReducer/> */}
+
+      <TodoProvider>
+        <TodoForm />
+        <TodoList/>
+      </TodoProvider>
     </>
   )
 }
