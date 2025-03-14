@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import ChildComponent from "./ChildComponent";
 
-const CounterWithFuncComponent = () => {
-    const [count,setCount] = useState(0)
+
+const CounterWithFuncComponent = ({count,setCount}) => {
+   
     return (
-        <div>
+        <div className='border-2 p-10'>
             <button onClick={() => setCount(count + 1)}>{count}</button>
+            <ChildComponent count={count}/>
         </div>
     );
 };
